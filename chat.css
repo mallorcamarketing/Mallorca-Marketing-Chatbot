@@ -1,32 +1,14 @@
-/* Wichtig: Variablen am Chat-Root setzen */
 .n8n-chat {
   --chat--color--primary: #78A2FF;
   --chat--color--primary-shade-50: #6b94f0;
   --chat--color--primary--shade-100: #5f86e0;
 
-  --chat--color--secondary: #78A2FF;
-  --chat--color--secondary-shade-50: #6b94f0;
-
-  --chat--border-radius: 16px;
-
   --chat--header--background: linear-gradient(135deg, #78A2FF, #5f86e0);
-  --chat--header--color: #ffffff;
-
   --chat--message--user--background: #78A2FF;
-  --chat--message--user--color: #ffffff;
-
-  --chat--message--bot--background: #ffffff;
-  --chat--message--bot--color: #101330;
-
-  --chat--toggle--background: #FFD643;
-  --chat--toggle--hover--background: #6b94f0;
-  --chat--toggle--active--background: #5f86e0;
-
-  --chat--window--width: 380px;
-  --chat--window--height: 600px;
+  --chat--border-radius: 14px;
 }
 
-/* Font global fürs Widget */
-.n8n-chat, .n8n-chat * {
+.n8n-chat,
+.n8n-chat * {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
 }
