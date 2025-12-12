@@ -36,11 +36,11 @@ createChat({
   },
 
   enableStreaming: false,
-});
-const theme = document.createElement("link");
+  const theme = document.createElement("link");
 theme.rel = "stylesheet";
 theme.href = "https://cdn.jsdelivr.net/gh/mallorcamarketing/Mallorca-Marketing-Chatbot@main/chat.css?v=1";
 document.head.appendChild(theme);
+});
 
 
 
