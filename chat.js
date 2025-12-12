@@ -6,14 +6,17 @@ baseStyle.rel = "stylesheet";
 baseStyle.href = "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css";
 document.head.appendChild(baseStyle);
 
+/* Dein Theme CSS laden (WICHTIG: vor createChat) */
+const theme = document.createElement("link");
+theme.rel = "stylesheet";
+theme.href = "https://cdn.jsdelivr.net/gh/mallorcamarketing/Mallorca-Marketing-Chatbot@main/chat.css?v=2";
+document.head.appendChild(theme);
+
 /* Chat starten */
 createChat({
   webhookUrl: "https://oliverblum.app.n8n.cloud/webhook/5cada43d-1422-4141-80a0-ca7af80b484d/chat",
 
-  webhookConfig: {
-    method: "POST",
-    headers: {},
-  },
+  webhookConfig: { method: "POST", headers: {} },
 
   mode: "window",
   loadPreviousSession: true,
@@ -28,7 +31,7 @@ createChat({
   i18n: {
     de: {
       title: "Willkommen! 👋",
-      subtitle: "Starte einen Chat, Wir helfen dir 24/7.",
+      subtitle: "Starte einen Chat, wir helfen dir 24/7.",
       footer: "",
       getStarted: "Neuer Chat",
       inputPlaceholder: "Stell deine Frage…",
@@ -36,11 +39,8 @@ createChat({
   },
 
   enableStreaming: false,
-  const theme = document.createElement("link");
-theme.rel = "stylesheet";
-theme.href = "https://cdn.jsdelivr.net/gh/mallorcamarketing/Mallorca-Marketing-Chatbot@main/chat.css?v=1";
-document.head.appendChild(theme);
 });
+
 
 
 
