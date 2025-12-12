@@ -26,7 +26,7 @@ createChat({
   ],
 
   i18n: {
-    en: {
+    de: {
       title: "Willkommen! 👋",
       subtitle: "Starte einen Chat, Wir helfen dir 24/7.",
       footer: "",
