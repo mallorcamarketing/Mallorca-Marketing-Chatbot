@@ -18,7 +18,7 @@ createChat({
   mode: "window",
   loadPreviousSession: true,
   showWelcomeScreen: false,
-  defaultLanguage: "en",
+  defaultLanguage: "de",
 
   initialMessages: [
     "Hallo! 👋",
